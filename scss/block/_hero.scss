@@ -121,19 +121,26 @@
         max-width: 457px;
         text-align: start;
     }
+
+    .hero__big_blocks {
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
     .hero__block {
         display: flex;
-        gap: 50px;
-        justify-content: center;
-        flex-direction: row-reverse;
+        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
         &::after {
             content: "";
             display: inline-block;
-            width: 24px;
-            height: 24px;
-            background-image: url("../img/arrow-lleft.svg");
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/arrow--right.svg");
             background-repeat: no-repeat;
             cursor: pointer;
         }
@@ -141,9 +148,9 @@
         &::before {
             content: "";
             display: inline-block;
-            width: 24px;
-            height: 24px;
-            background-image: url("../img/arrow-rigt.svg");
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/arrow--left.svg");
             background-repeat: no-repeat;
             cursor: pointer;
         }
@@ -152,7 +159,7 @@
     .hero__picture {
         width: 398px;
         height: 479px;
-        top: -57px;
+        top: -84px;
     }
 
     .hero__btn__blockss {

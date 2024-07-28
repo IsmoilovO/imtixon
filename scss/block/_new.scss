@@ -1,5 +1,5 @@
 .new {
-    padding-top: 32px;
+    padding: 32px 0;
 }
 
 .new__subtitlee {
@@ -38,4 +38,15 @@
 }
 
 @media screen and (min-width: 800px) {
+    .new {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .new {
+    }
+    .new__subtitle {
+        font-size: 24px;
+    }
 }
