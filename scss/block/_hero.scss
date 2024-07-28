@@ -1,0 +1,171 @@
+.hero {
+    background-color: #d0eafc;
+    padding-top: 16px;
+    padding-bottom: 164px;
+    overflow-y: hidden;
+}
+
+.hero__img {
+    background-image: url("../img/iphone-14.svg");
+    width: 192px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+}
+
+.hero__price {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    color: #1e3240;
+    margin-bottom: 10px;
+    span {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        color: #1e3240;
+    }
+}
+
+.hero__block {
+    text-align: center;
+}
+
+.hero__btn {
+    padding: 11px 40px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--prime);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.hero__btn__blockss {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/arrow-rigt.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/arrow-lleft.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}
+
+.hero__image {
+    position: relative;
+}
+.hero__picture {
+    position: absolute;
+    width: 173px;
+    height: 207px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 264px;
+    }
+    .hero__img {
+        margin-bottom: 15px;
+        width: 308px;
+        height: 72px;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+    }
+    .hero__price {
+        margin-bottom: 18px;
+    }
+    .hero__btn__blockss {
+        margin-bottom: 25px;
+    }
+
+    .hero__picture {
+        position: absolute;
+        width: 269px;
+        height: 324px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 104px;
+    }
+    .hero__content {
+        max-width: 457px;
+        text-align: start;
+    }
+    .hero__block {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/arrow-lleft.svg");
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/arrow-rigt.svg");
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+
+    .hero__picture {
+        width: 398px;
+        height: 479px;
+        top: -57px;
+    }
+
+    .hero__btn__blockss {
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .hero__image {
+        margin: 0;
+        width: 457px;
+        height: 106px;
+    }
+}

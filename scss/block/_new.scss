@@ -1,0 +1,41 @@
+.new {
+    padding-top: 32px;
+}
+
+.new__subtitlee {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: var(--1);
+
+    display: none;
+}
+
+.new__subtitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--prime);
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.new__subtitleee {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: var(--1);
+}
+
+@media screen and (min-width: 600px) {
+    .new__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(259px, 1fr));
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+}

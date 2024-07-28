@@ -1,0 +1,388 @@
+.advan {
+    padding-bottom: 21px;
+}
+
+.advan__link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--prime);
+    border: 1px solid var(--prime);
+    border-radius: 8px;
+    padding: 60px 18px;
+    display: none;
+}
+.advan__text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &::before {
+        content: "";
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background-image: url("../img/discount.png");
+        background-size: cover;
+    }
+}
+
+.advan__item {
+    background: var(--light-grey);
+    border-radius: 16px;
+    padding: 20px;
+
+    margin-bottom: 8px;
+}
+
+.advan__descr {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--07);
+}
+
+.advan__text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--1);
+    margin-bottom: 12px;
+}
+
+.advan__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--1);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.advan__item:nth-child(2) {
+    .advan__text {
+        &::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            background-image: url("../img/delivery.png");
+            background-size: cover;
+        }
+    }
+}
+.advan__item:nth-child(3) {
+    .advan__text {
+        &::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            background-image: url("../img/cardwallet.png");
+            background-size: cover;
+        }
+    }
+}
+
+.advan__item:nth-child(4) {
+    .advan__text {
+        &::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            background-image: url("../img/building.png");
+            background-size: cover;
+        }
+    }
+}
+.advan__item:nth-child(5) {
+    .advan__text {
+        &::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            background-image: url("../img/approval.png");
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advan__text {
+        &::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            display: none;
+            background-image: none;
+            background-size: cover;
+        }
+    }
+
+    .advan__item:nth-child(2) {
+        .advan__text {
+            &::before {
+                content: "";
+                width: 32px;
+                height: 32px;
+                display: none;
+                background-image: url("../img/delivery.png");
+                background-size: cover;
+            }
+        }
+    }
+
+    .advan__item:nth-child(4) {
+        .advan__text {
+            &::before {
+                content: "";
+                width: 32px;
+                height: 32px;
+                display: none;
+                background-image: url("../img/delivery.png");
+                background-size: cover;
+            }
+        }
+    }
+    .advan__item:nth-child(5) {
+        .advan__text {
+            &::before {
+                content: "";
+                width: 32px;
+                height: 32px;
+                display: none;
+                background-image: url("../img/delivery.png");
+                background-size: cover;
+            }
+        }
+    }
+    .advan__item:nth-child(3) {
+        .advan__text {
+            &::before {
+                content: "";
+                width: 32px;
+                height: 32px;
+                display: none;
+                background-image: url("../img/delivery.png");
+                background-size: cover;
+            }
+        }
+    }
+
+    .advan__min_block {
+        display: flex;
+        align-items: start;
+        gap: 26px;
+        &::before {
+            content: "";
+            width: 64px;
+            height: 64px;
+            display: inline-block;
+            background-image: url("../img/discount.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .advan__link {
+        display: inline-block;
+        white-space: nowrap;
+        max-width: max-content;
+        padding: 18px 60px;
+    }
+
+    .advan__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 71px 32px 24px;
+    }
+
+    .advan__content {
+        max-width: 293px;
+    }
+
+    .advan__item:nth-child(2) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 64px;
+                height: 64px;
+                display: inline-block;
+                background-image: url("../img/delivery.png");
+                background-size: cover;
+            }
+        }
+    }
+    .advan__item:nth-child(3) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 64px;
+                height: 64px;
+                display: inline-block;
+                background-image: url("../img/cardwallet.png");
+                background-size: cover;
+            }
+        }
+    }
+
+    .advan__item:nth-child(4) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 64px;
+                height: 64px;
+                display: inline-block;
+                background-image: url("../img/building.png");
+                background-size: cover;
+            }
+        }
+    }
+    .advan__item:nth-child(5) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 64px;
+                height: 64px;
+                display: inline-block;
+                background-image: url("../img/approval.png");
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advan__item {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 8px 32px 8px;
+        text-align: center;
+    }
+
+    .advan__min_block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .advan__content {
+        text-align: center;
+    }
+
+    .advan__text {
+        text-align: center;
+        max-width: 165px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advan__descr {
+        margin-bottom: 69px;
+    }
+
+    .advan__item:nth-child(2) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 160px;
+                height: 160px;
+                margin-bottom: 18px;
+                display: inline-block;
+                background-image: url("../img/delivery.png");
+                background-size: cover;
+            }
+        }
+    }
+    .advan__item:nth-child(3) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 160px;
+                height: 160px;
+                margin-bottom: 18px;
+                display: inline-block;
+                background-image: url("../img/cardwallet.png");
+                background-size: cover;
+            }
+        }
+    }
+
+    .advan__item:nth-child(4) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 160px;
+                height: 160px;
+                margin-bottom: 18px;
+                display: inline-block;
+                background-image: url("../img/building.png");
+                background-size: cover;
+            }
+        }
+    }
+    .advan__item:nth-child(5) {
+        .advan__min_block {
+            &::before {
+                content: "";
+                width: 160px;
+                height: 160px;
+                margin-bottom: 18px;
+                display: inline-block;
+                background-image: url("../img/approval.png");
+                background-size: cover;
+            }
+        }
+    }
+
+    .advan__min_block {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        &::before {
+            content: "";
+            width: 160px;
+            height: 160px;
+            display: inline-block;
+            background-image: url("../img/discount.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .advan__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+
+    .advan__item {
+        background: linear-gradient(180deg, #fe94a6 0%, #f2f2f2 100%);
+    }
+
+    .advan__item:nth-child(2) {
+        background: linear-gradient(180deg, #e685ff 0%, #f2f2f2 100%);
+    }
+    .advan__item:nth-child(3) {
+        background: linear-gradient(180deg, #7de9ff 0%, #f2f2f2 100%);
+    }
+    .advan__item:nth-child(4) {
+        background: linear-gradient(180deg, #ffe685 0%, #f6f6f6 100%);
+    }
+    .advan__item:nth-child(5) {
+        background: linear-gradient(180deg, #adffc1 0%, #f2f2f2 100%);
+    }
+
+    .advan__title {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 32px;
+    }
+}

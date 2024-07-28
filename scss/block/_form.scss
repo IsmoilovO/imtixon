@@ -1,0 +1,165 @@
+.forma {
+    padding-top: 24px;
+    background-color: var(--light-grey);
+    padding-bottom: 40px;
+}
+
+.forma__content {
+}
+.forma__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--1);
+    margin-bottom: 8px;
+}
+.forma__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--07);
+    margin-bottom: 8px;
+}
+.form__insed_block {
+    border-radius: 8px;
+    padding: 8px 70px 8px 16px;
+    background: linear-gradient(96deg, #f7355d 0%, #9747ff 100%);
+    margin-bottom: 8px;
+}
+.form__form {
+}
+.form__sale {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.form__info {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.form__buttton {
+}
+
+.form__contact {
+    width: 100%;
+}
+
+.form__input {
+    width: 100%;
+    padding: 14px 24px;
+    border: 1px solid var(--015);
+    border-radius: 8px;
+    outline-width: 1px;
+    outline-color: var(--prime);
+    margin-bottom: 8px;
+}
+
+.form__buttton {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--07);
+    padding: 18px 121px;
+    background-color: var(--01);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: var(--prime);
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .forma__content {
+        max-width: 414px;
+    }
+
+    .form__contact {
+        width: 414px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: none;
+    }
+
+    .form__buttton {
+        padding: 18px 33px;
+    }
+
+    .form__input {
+        margin: 0;
+        padding: 18px 24px;
+    }
+    .form__insed_block {
+        max-width: 279px;
+        padding: 8px 32px 8px 16px;
+    }
+
+    .form__info {
+        white-space: nowrap;
+        margin: 0;
+    }
+    .form__sale {
+        margin-bottom: 4px;
+    }
+
+    .forma__img {
+        background-image: url("../img/aplle.png");
+        width: 224px;
+        height: 173px;
+        background-size: cover;
+    }
+
+    .forma__block {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .forma__title {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 8px;
+        max-width: 339px;
+    }
+    .forma__text {
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .forma__img {
+        width: 484px;
+        height: 371px;
+    }
+    .forma__title {
+        font-size: 48px;
+        max-width: 421px;
+    }
+
+    .forma__text {
+        font-size: 24px;
+        max-width: 454px;
+        margin-bottom: 25px;
+    }
+
+    .forma__content {
+        max-width: 486px;
+    }
+    .form__insed_block {
+        background: none;
+    }
+
+    .form__form {
+        padding: 16px 32px 32px 32px;
+        border-radius: 8px;
+        background: linear-gradient(96deg, #f7355d 0%, #9747ff 100%);
+    }
+}
