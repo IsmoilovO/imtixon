@@ -1,5 +1,5 @@
 .main__top_block {
-    padding: 16px 0;
+    padding: 4px 0;
     background-color: var(--light-grey);
 }
 
@@ -497,6 +497,10 @@
 @media screen and (min-width: 1050px) {
     .main {
         padding-bottom: 12px;
+    }
+
+    .main__top_block {
+        padding: 16px0;
     }
     .main_mobile {
         display: none;

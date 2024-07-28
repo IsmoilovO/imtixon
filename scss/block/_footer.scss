@@ -105,6 +105,10 @@
 
 /* mobile */
 
+.footer__mobile {
+    padding-bottom: 51px;
+}
+
 .footer__mobile__min_block {
     display: flex;
     align-items: center;
@@ -270,6 +274,10 @@
 }
 
 .footer__end {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.05);
     background-color: #fff;
     padding: 4px 0;

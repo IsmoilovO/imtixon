@@ -33,7 +33,7 @@
 }
 .cart__star_block {
     display: flex;
-    gap: 8px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -90,7 +90,8 @@
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.06);
 }
 .cart__star_block {
-    margin-bottom: 16px;
+    gap: 8px;
+    margin-bottom: 15px;
 }
 
 .cart__image {
